@@ -1,0 +1,22 @@
+<div class="timer-view">
+
+    <!-- Editing form -->
+    <h1>
+        <span class="timer-unit">
+        <input name='hours' type="text" [(ngModel)]="input.hours" placeholder="0">h
+      </span>
+        <span class="timer-unit">
+        <input name='minutes' type="text" [(ngModel)]="input.minutes" placeholder="0">m
+      </span>
+        <span class="timer-unit">
+        <input name='seconds' type="text" [(ngModel)]="input.seconds" placeholder="0">s
+      </span>
+    </h1>
+
+    <!-- Actions -->
+    <div class="timer-form">
+        <button class="toggle-button" (click)="toggleTimer()">{{ isRunning ? 'Stop' : 'Start' }}</button>
+        <button class="reset-button" (click)="resetTimer()">Reset</button>
+    </div>
+
+</div>

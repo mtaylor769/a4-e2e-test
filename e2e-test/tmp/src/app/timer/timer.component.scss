@@ -1,0 +1,52 @@
+
+.timer-view {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50%;
+
+  h1 {
+    color: #aaa;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 0 20px;
+
+    input[type="text"] {
+      border: 0;
+      display: inline;
+      font-size: 40px;
+      text-align: right;
+      width: 50px;
+
+      &:focus { outline: none; }
+    }
+  }
+
+  .timer-form {
+    border-top: 1px #ccc solid;
+    padding: 20px;
+    text-align: center;
+
+    button {
+      color: white;
+      padding: 8px 20px;
+      border: 0;
+      font-size: 12px;
+    }
+
+    .toggle-button {
+      background-color: rgb(42, 99, 255);
+      &:hover {
+        background-color: rgb(31, 82, 224);
+      }
+    }
+
+    .reset-button {
+      background-color: rgb(184, 184, 184);
+      &:hover {
+        background-color: rgb(146, 146, 146);
+      }
+    }
+  }
+}
